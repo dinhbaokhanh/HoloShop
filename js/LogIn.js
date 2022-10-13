@@ -26,12 +26,6 @@ form.addEventListener("submit", (e) => {
         }
 });
 
-const logout = () => {
-    localStorage.removeItem("currentUser");
-    localStorage.removeItem("cart");
-    location.reload();
-};
-
 // responsive css
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
