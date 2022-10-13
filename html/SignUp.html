@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/Style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class= "home-menu" >
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./home.html">Home</a>
+            <a href="./list.html">Products</a>
+            <a href="./Upcoming.html">Upcoming Goods</a>
+            <a href="./LogIn.html">Account</a>
+        </div>
+        
+        <nav>
+            <div class="max-width">
+
+                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              
+                <div class="logo">
+                    <a href="./home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
+                </div>
+  
+                <ul class="menu">
+
+                    <a href="./list.html">
+                        <li>Products</li>
+                    </a>
+
+                    <a href="./Upcoming.html">
+                        <li>Upcoming Goods</li>
+                    </a>
+
+                    <!-- <a href="#">
+                        <li>Figures</li>
+                    </a> -->
+                
+                </ul>
+
+                <!-- <div class="input-bar">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div> -->
+
+                <div class="user">
+                    <a href="./LogIn.html">
+                        <i class="far fa-user fa-2x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div id="blackline"></div>
+
+    </div>
+    
+    <div class="container">
+
+        <form id="sign-up">
+            <div class="row header">
+                <h2>Sign Up</h2>
+            </div>
+
+            <div>
+                <p>Please enter your e-mail and password:</p>
+            </div>
+
+            <div class="row row_username">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+
+            <div class="row row_email">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="row row_password">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="row row_confirmPassword">
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            </div>
+
+            <div class="row">
+                <button type="submit" id="submit">Sign Up</button>
+            </div>
+
+            <p class="AskingUser">Already have an account? <a href="./LogIn.html">Log In</a> now</p>
+        </form>
+
+        
+
+    </div>
+    <br><br><br><br><br>
+    <div class="footer">
+
+        <div class="footer-info">
+            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Infomation</div>
+            <!-- <div class="footer-des">Terms of Use</a></div>
+            <div class="footer-des">Privacy Policy</a></div> -->
+            <div class="footer-des"><a href="./Q&A.html">Q&A</a></div>
+        </div>
+
+        <div class="footet-info">
+            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Related Sites</div>
+            <div class="footer-des"><a href=".../a.hololive/home.html"> Hololive Fanpage</a></div>
+            
+        </div>
+
+    </div>
+
+    <div class="footer-aside"><a href="./home.html"> hololive shop project by Dinh Bao Khanh from HDT-JSA16</a></div>
+
+    
+
+    <script src="../js/SignUp.js"></script>
+</body>
+</html>

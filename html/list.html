@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/list.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+
+    <div class= "home-menu" >
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../html/home.html">Home</a>
+            <a href="../html/list.html">Products</a>
+            <a href="../html/Upcoming.html">Upcoming Goods</a>
+            <a href="../html/LogIn.html">Account</a>
+        </div>
+
+        <nav>
+            <div class="max-width">
+
+                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              
+                <div class="logo">
+                    <a href="../html/home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
+                </div>
+  
+                <ul class="menu">
+
+                    <a href="../html/list.html">
+                        <li>Products</li>
+                    </a>
+
+                    <a href="../html/Upcoming.html">
+                        <li>Upcoming Goods</li>
+                    </a>
+                
+                </ul>
+
+                <div class="input-bar">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon" style="cursor: pointer;" onclick="SearchEngine()"></i>
+                </div>
+
+                <div class="user">
+                    <a class="account" href="../html/LogIn.html">
+                        <i class="far fa-user fa-2x"></i>
+                    </a>
+                    <a style="cursor: pointer;" id="cart" >
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- <div id="myModal" class="modal">
+
+                <div id="empty-cart">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><p style="text-align: center; font-size: 17px;"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+                <div id="modal-content">                        
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                                
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"></span>
+                            <span class="cart-price cart-header cart-column"></span>
+                            <span class="cart-quantity cart-header cart-column"></span>
+                        </div>
+
+                        <div class="cart-items">
+                            
+                            
+                        
+                        </div>
+                    
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </nav>
+
+        <div id="blackline"></div>
+
+    </div>
+
+
+    <!-- <div class="title">
+        <h2>GOODS LIST</h2>
+    </div> -->
+
+    <br><br><br>
+
+
+    <div class="wrapper">
+
+        <div class="filter">
+
+            <div class="filter_main"><p>Groups:</p></div>
+
+            <div class="groups">
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Holo" onchange="change()"> <span>Hololive</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Indonesia" onchange="change()"> <span>Hololive Indonesia</span> </label>
+                </div>
+
+                <div class="checkbox final-box">
+                    <label><input type="checkbox" rel="English" onchange="change()"> <span>Hololive English</span> </label>
+                </div>
+            </div>
+
+            
+            <div class="filter_main"><p>Categories:</p></div>
+
+            <div class="categories">
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="Memorials" onchange="change()" id="check-memorials" > <span>Memorials</span> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox" rel="CDs" onchange="change()" id="check-CDs" > <span>CDs</span> </label>
+                </div>
+
+                <div class="checkbox final-box">
+                    <label><input type="checkbox" rel="Figures" onchange="change()" id="check-figures" > <span>Figures</span> </label>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="goods">
+
+            <div class="items Holo Live Memorials">
+                <a href="../goods/1.html">
+                    <img class="items-image" src="../images/polka_BD2022_top_400x.png" alt="">
+                    <div class="items-name">Omaru Polka Birthday Celebration 2022</div>
+                    <div class="items-price">~ 499,000 VND</div>
+                </a>
+            </div>
+            
+
+            <div class="items Holo Live Memorials">
+                <a href="../goods/2.html">
+                    <img class="items-image" src="../images/nekomataokayu_birthday2022_top_0215_800x.png" alt="">
+                    <div class="items-name">Nekomata Okayu Birthday Celebration 2022</div>
+                    <div class="items-price">~ 585,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Holo Live Figures">
+                <a href="../goods/3.html">
+                    <img class="items-image" src="../images/Minato_Aqua_AQUA_IRO_SUPER_DREAM.jpg" alt="">
+                    <div class="items-name">Minato Aqua AQUA IRO SUPER DREAM Ver.</div>
+                    <div class="items-price">~ 5,460,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Holo Live Memorials">
+                <a href="../goods/4.html">
+                    <img class="items-image" src="../images/0224BeyondtheStage__1_900x.png" alt="">
+                    <div class="items-name">"Beyond the stage" Live Goods Resale</div>
+                    <div class="items-price">~ 170,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Hololive English CDs">
+                <a href="../goods/5.html">
+                    <img class="items-image" src="../images/irys-half-year.png" alt="">
+                    <div class="items-name">IryS Half-Year Celebration</div>
+                    <div class="items-price">~ 390,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Holo Live Figures">
+                <a href="../goods/6.html">
+                    <img class="items-image" src="../images/Marine_17_scale_figure.jpg" alt="">
+                    <div class="items-name">Houshou Marine 1/7 Scale Figure</div>
+                    <div class="items-price">~ 9,200,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Holo Live CDs">
+                <a href="../goods/7.html">
+                    <img class="items-image" src="../images/Towa_scream_EP.png" alt="">
+                    <div class="items-name">Towa 1st EP "Scream"</div>
+                    <div class="items-price">~ 440,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Holo Live CDs">
+                <a href="../goods/8.html">
+                    <img class="items-image" src="../images/0128_aqua_top_400x.png" alt="">
+                    <div class="items-name">[First Press Limited Edition] Minato Aqua 1st EP</div>
+                    <div class="items-price">~ 440,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Hololive Indonesia Memorials">
+                <a href="../goods/9.html">
+                    <img class="items-image" src="../images/moona_BD2022_top_en_png_800x.webp" alt="">
+                    <div class="items-name">Moona Hoshinova Birthday Celebration 2022</div>
+                    <div class="items-price">~ 399,000 VND</div>
+                </a>
+            </div>
+            
+            <div class="items Holo Live CDs">
+                <a href="../goods/10.html">
+                    <img class="items-image" src="../images/SSStellar-Sales.jpg" alt="">
+                    <div class="items-name">Hoshimachi Suisei 1st Album "Still Still Stellar"</div>
+                    <div class="items-price">~ 649,000 VND</div>
+                </a>
+            </div>
+            
+            <div class="items Hololive English Figures">
+                <a href="">
+                    <img class="items-image" src="../images/nendoroid_gawr_gura_profile.jpg" alt="">
+                    <div class="items-name">Nendoroid Gawr Gura</div>
+                    <div class="items-price">~ 1,170,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Hololive English Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/council_halfANV_top_jp_800x.png" alt="">
+                    <div class="items-name">Hololive English Council Semi annual activity commemoration</div>
+                    <div class="items-price">~ 396,000 VND</div>
+                </a>  
+            </div>
+
+            <div class="items Holo Live Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/flare_birthday2022_banner_top_800x.png" alt="">
+                    <div class="items-name">Shiranui Flare 3D new visual unveiling commemoration</div>
+                    <div class="items-price">~ 299,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Holo Live Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/2022_usada_pekora.png" alt="">
+                    <div class="items-name">Usada Pekora Birthday Celebration 2022</div>
+                    <div class="items-price">~ 299,000 VND</div>  
+                </a>
+            </div>
+
+            <div class="items Holo Live Hololive English Hololive Indonesia Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/Hololive_summer_festival_collab_EnVsIndo.webp" alt="">
+                    <div class="items-name">Hololive Summer Festival x atre Akihabara Collaboration Merch Key Visual Graphic T-shirt</div>
+                    <div class="items-price">~ 1,310,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Hololive English Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/ameliawatson-bd2022.png" alt="">
+                    <div class="items-name">Watson Amelia Birthday Celebration 2022</div>
+                    <div class="items-price">~ 435,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Holo Live Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/0104_____Luna2nd.png" alt="">
+                    <div class="items-name">Himemori Luna 2nd Anniversary Celebration</div>
+                    <div class="items-price">~ 99,000 VND</div>
+                </a>
+            </div>
+
+
+            <div class="items Hololive English CDs">
+                <a href="#">
+                    <img class="items-image" src="../images/MoriCalliope_YourMori.png" alt="">
+                    <div class="items-name">Mori Calliope ”Your Mori.”</div>
+                    <div class="items-price">~ 435,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Hololive English Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/1213__English-Myth.png" alt="">
+                    <div class="items-name">Hololive English -Myth- New Outfit Celebration</div>
+                    <div class="items-price">~ 590,000 VND</div>
+                </a>
+            </div>
+
+            <div class="items Hololive Indonesia Memorials">
+                <a href="#">
+                    <img class="items-image" src="../images/Olle_birthday_celebration.webp" alt="">
+                    <div class="items-name">Kureiji Ollie Birthday Celebration 2021</div>
+                    <div class="items-price">~ 496,000 VND</div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="footer">
+
+        <div class="footer-info">
+            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Infomation</div>
+            <!-- <div class="footer-des">Terms of Use</a></div>
+            <div class="footer-des">Privacy Policy</a></div> -->
+            <div class="footer-des"><a href="../html/Q&A.html">Q&A</a></div>
+        </div>
+
+        <div class="footet-info">
+            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Related Sites</div>
+            <div class="footer-des"><a href=".../a.hololive/home.html"> Hololive Fanpage</a></div>
+            
+        </div>
+
+    </div>
+
+    <div class="footer-aside"><a href="../html/home.html"> hololive shop project by Dinh Bao Khanh from HDT-JSA16</a></div>
+
+    <script src="../js/list.js"></script>
+</body>
+</html>

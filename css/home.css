@@ -1,0 +1,386 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+
+button {
+    width: 200px;
+    height: 45px;
+    
+    display: inline-block;
+    background: #49c8f0; 
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; 
+    margin-right: 105px;
+    margin-bottom: 80px;
+
+    transition-duration: 0.4s;
+    border: 2px solid #49c8f0;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #49c8f0;
+}
+
+
+
+.home-menu nav .max-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+
+ul, li {
+    list-style-type:none;
+}
+
+.home-menu {
+    padding-top: 2px;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.home-menu nav {
+    height: 80px;
+}
+
+.home-menu nav .menu a {
+    margin-left: -15px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #49c8f0;
+    font-size: 20px;
+    letter-spacing: -.5px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-menu nav .input-bar {
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+#search-input {
+    background: none;
+    vertical-align: middle;
+
+    padding:7px 10px;
+    width: 200px;
+    border: 1px solid #49c8f0;
+    border-radius: 4px;
+}
+
+.home-menu nav .user {
+    max-width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .user a {
+    margin-inline-start: 20px;
+    color: #49c8f0;
+    margin-block-end: 20px;
+}
+
+#blackline {
+    height: 1.5px;
+    background-color: #49c8f0;
+}
+
+/* sliding */
+
+.News{
+    background-color: #49c8f0;
+    padding-top: 20px;
+}
+
+* {box-sizing: border-box;}
+body {font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+    position: relative;
+    margin-top: 10px;
+    height: 550px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 10px;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* New Arrivals */
+
+.new-arrivals, .best-seller {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    height: 500px;
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+
+    font-weight: 500;
+    font-size: 30px;
+    color: #49c8f0;
+    margin-bottom: 50px;
+}
+
+h2::before, h2::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 5px solid;
+    margin: auto;
+    color: #5bd9ff;
+}
+
+h2::before {
+    margin-right: 30px;
+}
+h2::after {
+    margin-left: 30px;
+}
+
+.items-wrapper {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items {
+    max-width: 250px;
+}
+
+.items-image {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.items-name {
+    width: 77%;
+    margin-top: 10px;
+}
+
+.view-all {
+    margin-top: 50px;
+    text-align: end;
+}
+
+.items-price {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15.5px;
+    font-weight: 500;
+}
+
+
+/* Footer */
+.footer {
+    padding: 50px 50px 0 50px;
+    background-color: #717171;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title img {
+    width: 12%;
+}
+
+.footer-des {
+    color:#a0a0a0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.footer-des a {
+    color: #a0a0a0;
+}
+.footer-des a:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-des:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-aside {
+    background-color: #717171;
+    color: #ffffff;
+    padding: 40px 62px 30px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-aside a{
+    color: #b8b8b8;
+    font-size: 12px;
+    margin-right: 100px;
+}
+
+.footer-aside a:hover{
+    color: black;
+}
+
+
+/* responsive */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid #016783;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+.sidenav a:hover {
+    color: #666666;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.responsive-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .slideshow-container {
+        position: relative;
+        margin-top: 10px;
+        height: 410px;
+        max-width: 950px;
+        margin: auto;
+    }
+    
+    .responsive-nav {
+        display: block;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .sidenav {
+        padding-top: 15px;
+    }
+    
+    .account {
+        display: none;
+    }
+    
+    .sidenav a {
+        font-size: 14px;
+    }
+
+    .dot{
+        display: none;
+    }
+
+    .News {
+        height: 435px;
+    }
+
+    .mySlides {
+        width: 90%;
+        margin: auto;
+    }
+
+    .new-arrivals, .best-seller {
+        margin-bottom: 450px;
+    }
+
+    .items {
+        margin-bottom: 20px;
+    }
+}
+
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Resale] hololive 2nd fes. “Beyond the Stage”</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./Style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div>
+        <div class= "home-menu" >
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../home.html">Home</a>
+                <a href="../list.html">Products</a>
+                <a href="./Upcoming.html">Upcoming Goods</a>
+                <a href="./LogIn.html">Account</a>
+            </div>
+            
+            <nav>
+                <div class="max-width">
+
+                    <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                
+                    <div class="logo">
+                        <a href="../home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
+                    </div>
+    
+                    <ul class="menu">
+
+                        <a href="../list.html">
+                            <li>Products</li>
+                        </a>
+
+                        <a href="../Upcoming.html">
+                            <li>Upcoming Goods</li>
+                        </a>
+
+                    </ul>
+
+                    <div class="user">
+                        <a class="account" href="../LogIn.html">
+                            <i class="far fa-user fa-2x"></i>
+                        </a>
+                        
+                        <a style="cursor: pointer;" id="cart" >
+                            <i class="fas fa-shopping-basket fa-2x"></i>
+                        </a>
+
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <div id="empty-cart">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <br><br><br><br><br><br><br><br><br><p style="text-align: center; font-size: 17px;"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+
+                        <div id="modal-content">                        
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                            </div>
+
+                            <div class="modal-body">
+                                        
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column"></span>
+                                    <span class="cart-price cart-header cart-column"></span>
+                                    <span class="cart-quantity cart-header cart-column"></span>
+                                </div>
+
+                                <div class="cart-items">
+
+                                    
+                                
+                                </div>
+                            
+                            </div>
+    
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <div id="blackline"></div>
+
+        </div>
+        
+        <br><br><br>
+        
+        <div class="product">
+
+            <div class="product-images">
+
+                <div class="content">
+                    <img class="mySlides" src="./images/0224BeyondtheStage__full1_800x.webp" >
+                    <img class="mySlides" src="./images/0114BeyondtheStage__T_Shirt160x.webp" >
+                    <img class="mySlides" src="./images/0114BeyondtheStage_B2Tapestry_800x.webp" >
+                    <img class="mySlides" src="./images/0114BeyondtheStage_blanket_160x.webp" >
+                    <img class="mySlides" src="./images/0114BeyondtheStage_towel_160x.webp" >
+                    <img class="mySlides" src="./images/0114BeyondtheStage_wristband_160x.webp" >
+                </div>
+                
+                <div class="image-switch">
+                    
+                    <img src="./images/0224BeyondtheStage__full1_800x.webp" class="image-button" onclick="currentDiv(1)" alt="">
+                    <img src="./images/0114BeyondtheStage__T_Shirt160x.webp" class="image-button " onclick="currentDiv(2)" alt="">
+                    <img src="./images/0114BeyondtheStage_B2Tapestry_800x.webp" class="image-button " onclick="currentDiv(3)" alt="">
+                    <img src="./images/0114BeyondtheStage_blanket_160x.webp" class="image-button " onclick="currentDiv(4)" alt="" > 
+                    <img src="./images/0114BeyondtheStage_towel_160x.webp" class="image-button " onclick="currentDiv(5)" alt="" >
+                    <img src="./images/0114BeyondtheStage_wristband_160x.webp" class="image-button " onclick="currentDiv(6)" alt="" > 
+                
+                </div>
+
+            </div>
+
+            <div class="product-info">
+                <div class="title">[Resale] hololive 2nd fes. “Beyond the Stage”</div>
+                <div class="bar"></div>
+                <!-- <p style="margin-top: 10px;"> Overall Rating:</p>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div> -->
+                <div style="height: 5px;"></div>
+                <br>
+                <br>
+                <p>This is the resale of the live merch from the hololive 2nd fes. “Beyond the Stage”.</p>
+                <br>
+                <p>This product is only available in limited quantities.</p>
+                <br>
+                <details>
+                    <summary style="cursor: pointer;"> ◇Merch List</summary>
+                    <br>
+                    <br>・”Beyond the Stage” T-shirt
+                    <br> Size: Approx. Length 78cm/Width 58cm/Sleeve Length 22cm
+                    <br> Material: Cotton
+                    <br>
+                    <br>・”Beyond the Stage” Muffler Towel
+                    <br> Size: Approx. H200xW1000mm
+                    <br> Material: Cotton
+                    <br>
+                    <br>・”Beyond the Stage” Rubber Wristband
+                    <br> Size: Approx. H40xW202mm
+                    <br> Material: Silicon
+                    <br>
+                    <br>・”Beyond the Stage” B2 Tapestry
+                    <br> Size: Approx. H728xW515mm
+                    <br> Material: Polyester
+                    <br>
+                    <br>・”Beyond the Stage” SUPER BIG Blanket
+                    <br> Size: Approx. H1200xW2000mm
+                    <br> Material: Polyester
+                </details>
+                <br><br>
+                <div class="set">Set:</div>
+
+                <div id="container">
+                    
+                    <label class="selected-option demo" onclick="sel(this) ;currentDiv(2)" >
+                        <img src="./images/0114BeyondtheStage__T_Shirt160x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">T-shirt</div>
+                        <div class="set-info">
+                            <div class="set-price">850000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(3)">
+                        <img src="./images/0114BeyondtheStage_B2Tapestry_800x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">B2 Tapestry</div>
+                        <div class="set-info">
+                            <div class="set-price">585000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(4)">
+                        <img src="./images/0114BeyondtheStage_blanket_160x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">SUPER BIG Blanket</div>
+                        <div class="set-info">
+                            <div class="set-price">1200000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(5)">
+                        <img src="./images/0114BeyondtheStage_towel_160x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">Muffler Towel</div>
+                        <div class="set-info">
+                            <div class="set-price">585000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+                    
+                    <label class="options demo" onclick="sel(this) ;currentDiv(6)">
+                        <img src="./images/0114BeyondtheStage_wristband_160x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">Rubber Wristband</div>
+                        <div class="set-info">
+                            <div class="set-price">170000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+                </div>
+                <br>
+
+                <div class="set">Quantity:</div>
+                <div class="quantity">
+                    <div class="quantity-button" onclick="decrease()"> - </div>
+                    <input type="text" onkeypress="return isNumberKey(event)" id="quantity-input" value="1" min="1">
+                    <div class="quantity-button" onclick="increase()"> + </div>
+                </div>
+
+                <br><br>
+            
+                <div class="buy">
+                    <button class="btn-cart">ADD TO CART</button>
+                </div>
+
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <br><br><br><br>
+
+    <div class="footer">
+
+        <div class="footer-info">
+            <div class="footer-title"><img src="./images/FooterIcon.webp" alt=""> Infomation</div>
+            <!-- <div class="footer-des">Terms of Use</a></div>
+            <div class="footer-des">Privacy Policy</a></div> -->
+            <div class="footer-des"><a href="./Q&A.html">Q&A</a></div>
+        </div>
+
+        <div class="footet-info">
+            <div class="footer-title"><img src="./images/FooterIcon.webp" alt=""> Related Sites</div>
+            <div class="footer-des"><a href="../a.hololive/home.html"> Hololive Fanpage</a></div>
+            
+        </div>
+
+    </div>
+    <div class="footer-aside"><a href="./home.html"> hololive shop project by Dinh Bao Khanh from HDT-JSA16</a></div>
+
+    <script src="../js/goods.js"></script>
+
+</body>
+</html>
