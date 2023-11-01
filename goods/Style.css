@@ -143,37 +143,6 @@ nav .user a {
     background-color: #40b9dd;
 }
 
-.rating {
-    display: flex;
-    margin-top: -10px;
-    flex-direction: row-reverse;
-    margin-left: -4px;
-    float: left
-}
-.rating>input {
-    display: none
-}
-.rating>label {
-    position: relative;
-    width: 19px;
-    font-size: 25px;
-    color: #40b9dd;
-    cursor: pointer
-}
-.rating>label::before {
-    content: "\2605";
-    position: absolute;
-    opacity: 0
-}
-.rating>label:hover:before, .rating>label:hover~label:before {
-    opacity: 1 
-}
-.rating>input:checked~label:before {
-    opacity: 1
-}
-.rating:hover>input:checked~label:before {
-    opacity: 0.4
-}
 
 .product-info p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
