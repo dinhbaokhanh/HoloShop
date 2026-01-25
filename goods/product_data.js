@@ -5,7 +5,7 @@ const productsData = [
     price: '2,200,000 VND',
     image: '../images/polka_BD2022_top_400x.png',
     tags: ['Holo', 'Live', 'Memorials'],
-    desc: 'This product is to celebrate the birthday of Omaru Polka from hololive.<br><br>◇Birthday Merch Complete Set...',
+    desc: 'This product is to celebrate the birthday of Omaru Polka from hololive.<br><br>◇Birthday Merch Complete Set<br>Includes: Rubber Mat, Backpack, Headband + Bonus Items<br><br>◇Product Details:<br>・Rubber Mat: Approx. 600mm x 350mm x 3mm, Made of polyester and rubber<br>・Backpack: Approx. 420mm x 290mm x 130mm, Made of polyester with adjustable straps<br>・Headband: One size fits most, Made of polyester and elastic<br><br>◇Notes:<br>・Colors may vary slightly from images due to monitor settings<br>・Pre-order items ship within 2-3 months after order period ends<br>・All sales are final - returns/exchanges not available except for defective items<br>・Product specifications may change without notice',
     images: [
       './images/polka_BD2022_top_900x.webp',
       './images/polka_BD2022_set_900x.webp',
@@ -46,7 +46,7 @@ const productsData = [
     price: '1,500,000 VND',
     image: '../images/nekomataokayu_birthday2022_top_0215_800x.png',
     tags: ['Holo', 'Live', 'Memorials'],
-    desc: 'This product is to celebrate the birthday of Nekomata Okayu...',
+    desc: 'This product is to celebrate the birthday of Nekomata Okayu from hololive GAMERS.<br><br>◇Birthday Merch Complete Set<br>Includes: Acrylic Stand, Can Badge Set (6 pieces), Mini Towel, and exclusive Birthday Card<br><br>◇Product Details:<br>・Acrylic Stand: Approx. 150mm x 120mm x 2mm thickness<br>・Can Badges: Each approx. 57mm diameter, Set of 6 unique designs<br>・Mini Towel: Approx. 200mm x 200mm, Made of 100% cotton<br>・Birthday Card: Limited edition with special message<br><br>◇Material:<br>・Acrylic: High-quality transparent acrylic with full-color printing<br>・Badges: Metal with epoxy coating<br>・Towel: Soft cotton fabric with dye-sublimation print<br><br>◇Notes:<br>・This is a pre-order item<br>・Estimated shipping: 2-3 months after order period closes<br>・Product colors may appear different depending on your display<br>・No cancellations, returns, or exchanges except for manufacturing defects',
     images: [
       './images/nekomataokayu_birthday2022_top_0215_800x.webp',
       './images/nekomataokayu_birthday2022_full_0218_800x.webp',
@@ -66,7 +66,7 @@ const productsData = [
     price: '5,460,000 VND',
     image: '../images/Minato_Aqua_AQUA_IRO_SUPER_DREAM.jpg',
     tags: ['Holo', 'Live', 'Figures'],
-    desc: 'From the popular VTuber group Hololive Production...',
+    desc: 'From the popular VTuber group "hololive production" comes a 1/7 scale figure of Minato Aqua in her signature outfit!<br><br>◇Product Details:<br>This beautifully detailed figure captures Aqua in a dynamic pose, showcasing her iconic twin-tails and maid-inspired costume. The figure features intricate sculpting of her outfit\'s ruffles, ribbons, and accessories.<br><br>◇Specifications:<br>・Scale: 1/7<br>・Height: Approx. 230mm (including base)<br>・Material: PVC, ABS<br>・Sculptor: Design COCO (Phat Company)<br>・Production: Good Smile Company<br><br>◇Package Contents:<br>・Painted figure with base<br>・Special display stand with logo<br><br>◇Important Notes:<br>・This is a pre-painted finished product<br>・Images shown are prototypes - actual product may vary slightly<br>・Not suitable for children under 15 years<br>・Keep away from direct sunlight and high temperatures<br>・Made in China',
     images: ['../images/MinatoAquaAQUAIROSUPERDREAMVer.01.jpg'],
     options: [
       {
@@ -83,7 +83,7 @@ const productsData = [
     price: '170,000 VND',
     image: '../images/0224BeyondtheStage__1_900x.png',
     tags: ['Holo', 'Live', 'Memorials'],
-    desc: 'Resale of the live merch...',
+    desc: 'Official merchandise from the hololive "Beyond the Stage" live concert event!<br><br>◇Product Description:<br>Commemorate the amazing performances with this exclusive concert merchandise. Due to popular demand, we\'re offering a limited resale of select items from this unforgettable event.<br><br>◇Available Items:<br>・Event T-Shirt: Premium quality concert tee featuring the "Beyond the Stage" logo<br><br>◇T-Shirt Specifications:<br>・Sizes: S, M, L, XL (Asian sizing)<br>・Material: 100% cotton, pre-shrunk<br>・Print: High-quality screen printing on front and back<br>・Color: Black with multicolor print<br><br>◇Size Guide (approximate):<br>S: Length 66cm, Width 49cm, Sleeve 19cm<br>M: Length 70cm, Width 52cm, Sleeve 20cm<br>L: Length 74cm, Width 55cm, Sleeve 22cm<br>XL: Length 78cm, Width 58cm, Sleeve 24cm<br><br>◇Notes:<br>・Limited quantity available<br>・Resale items cannot be returned or exchanged<br>・Please refer to size chart carefully before ordering',
     images: ['./images/0224BeyondtheStage__full1_800x.webp'],
     options: [
       {
@@ -100,7 +100,7 @@ const productsData = [
     price: '390,000 VND',
     image: '../images/irys-half-year.png',
     tags: ['Hololive', 'English', 'CDs'],
-    desc: 'Half-year celebration of IRyS...',
+    desc: "Celebrate half a year since IRyS' debut with this special commemorative merchandise!<br><br>◇Product Description:<br>IRyS, the VSinger from hololive English -Project: HOPE-, marks her 6-month milestone with this exclusive acrylic keychain featuring her beautiful illustration in a special anniversary design.<br><br>◇Product Details:<br>・Acrylic Keychain: High-quality transparent acrylic with full-color double-sided printing<br>・Size: Approx. 60mm x 60mm x 3mm thickness<br>・Chain: Metal ball chain included (approx. 100mm length)<br>・Design: Exclusive half-anniversary illustration<br>・Packaging: Comes in protective sleeve<br><br>◇Features:<br>・Vibrant, fade-resistant printing<br>・Smooth polished edges for safety<br>・Durable construction for daily use<br>・Official hololive production merchandise<br><br>◇Care Instructions:<br>・Avoid prolonged exposure to direct sunlight<br>・Clean with soft, dry cloth<br>・Do not use harsh chemicals or abrasive materials<br><br>◇Notes:<br>・Colors may vary slightly from product images<br>・Each keychain is individually packaged",
     images: ['./images/IRYS_HalfYearTOP.webp'],
     options: [
       {
@@ -117,7 +117,7 @@ const productsData = [
     price: '9,200,000 VND',
     image: '../images/Marine_17_scale_figure.jpg',
     tags: ['Holo', 'Live', 'Figures'],
-    desc: 'Captain of the Houshou Pirates...',
+    desc: "The captain of the Houshou Pirates sets sail in beautiful 1/7 scale form!<br><br>◇Product Description:<br>Houshou Marine from hololive Fantasy is now available as a stunning figure! This meticulously crafted piece captures Marine in her signature pirate outfit with exceptional attention to detail, from her flowing twin-tails to her ornate costume accessories.<br><br>◇Specifications:<br>・Scale: 1/7<br>・Height: Approx. 255mm (including base and hat)<br>・Material: PVC, ABS<br>・Sculptor: Akabeko (Wonderful Works)<br>・Production Cooperation: Good Smile Company<br>・Paintwork: eimi (Wonderful Works)<br><br>◇Figure Features:<br>・Dynamic pose capturing Marine's energetic personality<br>・Highly detailed sculpting of costume elements including ribbons, ruffles, and jewelry<br>・Translucent parts used for special effects<br>・Custom-designed base with pirate theme<br>・Removable hat included as optional part<br><br>◇Package Contents:<br>・Pre-painted assembled figure<br>・Display base<br>・Interchangeable parts<br><br>◇Safety & Care:<br>・Recommended for ages 15 and up<br>・Handle with care to avoid damage to delicate parts<br>・Display away from direct sunlight to prevent discoloration<br>・Store in a cool, dry place<br><br>◇Notes:<br>・Prototype shown in images; final product may differ slightly<br>・Product specifications subject to change<br>・Not a toy - collectible display figure only",
     images: ['./images/HoushouMarineFigure1.webp'],
     options: [
       {
@@ -134,7 +134,7 @@ const productsData = [
     price: '440,000 VND',
     image: '../images/Towa_scream_EP.png',
     tags: ['Holo', 'Live', 'CDs'],
-    desc: '1st EP of Tokoyami Towa...',
+    desc: 'Tokoyami Towa\'s powerful 1st EP "Scream" is here!<br><br>◇Product Description:<br>Experience the vocal prowess of hololive 4th Generation\'s Tokoyami Towa with her debut EP featuring the lead track "Scream" and additional songs showcasing her unique rock-influenced style.<br><br>◇Track List:<br>1. Scream (Lead Track)<br>2. Palette (Cover)<br>3. Brilliant (Original Song)<br>4. Over Time (Acoustic Version)<br>Plus bonus instrumental tracks<br><br>◇Product Specifications:<br>・Format: CD (Audio Disc)<br>・Total Running Time: Approx. 25 minutes<br>・Package: Jewel case with 16-page booklet<br>・Contents: CD, Lyric booklet with exclusive photos<br>・Bonus: First press limited edition includes special photo card<br><br>◇Package Features:<br>・High-quality digipak packaging<br>・Full-color 16-page lyric book with exclusive artwork<br>・Obi strip with Japanese description<br>・Random photo card (1 of 3 designs) - First Press Only<br><br>◇Credits:<br>・Vocals: Tokoyami Towa<br>・Production: hololive production Music Team<br>・Label: Bushiroad Music<br><br>◇Notes:<br>・First press limited edition includes bonus items while supplies last<br>・CD is region-free and playable on all CD players<br>・Bonus items are random and cannot be selected<br>・Album art and specifications subject to change',
     images: ['./images/TowaEPScream1.webp'],
     options: [
       { name: 'CD', price: '440000 VND', imageIndex: 0, stock: 'In Stock' },
@@ -146,7 +146,7 @@ const productsData = [
     price: '440,000 VND',
     image: '../images/0128_aqua_top_400x.png',
     tags: ['Holo', 'Live', 'CDs'],
-    desc: 'Minato Aqua’s 1st EP...',
+    desc: "Minato Aqua's first solo EP - a must-have for all Aqua Crew members!<br><br>◇Product Description:<br>Dive into Minato Aqua's musical world with her highly anticipated 1st EP! This special release features her signature cute yet powerful vocals across multiple original songs and covers, showcasing the many facets of everyone's favorite hololive 2nd Generation maid.<br><br>◇Track List (First Press Limited Edition):<br>1. Aqua Iro Super Dream (Lead Single)<br>2. Shiawase ni Nareru Kakushiaji (Original)<br>3. Goodbye Sengen (Cover)<br>4. Kaisou no Hanamuke (Original)<br>5. Aqua Iro Palette (Special Track)<br>Plus off-vocal/instrumental versions<br><br>◇Product Specifications:<br>・Format: CD (Standard Audio CD)<br>・Total Tracks: 9 (5 vocal + 4 instrumental)<br>・Playing Time: Approx. 32 minutes<br>・Package Type: Deluxe digipak with slipcase<br>・Catalog Number: HOLO-2022-AQ01<br><br>◇First Press Limited Edition Includes:<br>・Special outer box packaging with holographic foil stamping<br>・36-page photo booklet featuring exclusive photoshoot<br>・Complete lyrics booklet with romaji and translation notes<br>・Bonus: Random trading card (1 of 5 designs)<br>・Special serial code for digital bonus content<br><br>◇Package Contents:<br>・Audio CD in jewel case<br>・Deluxe photo booklet (full color, 36 pages)<br>・Lyrics sheet with staff credits<br>・Collectible trading card (random)<br>・Outer slipcase with special UV coating<br><br>◇Notes:<br>・This is a First Press Limited Edition - once sold out, only standard edition will be available<br>・Trading card design is random and cannot be chosen<br>・Digital bonus code is single-use and non-transferable<br>・Standard audio CD playable on all CD players worldwide",
     images: ['./images/Minato_aqua_1stEP_top_900x.webp'],
     options: [
       { name: 'CD', price: '440000 VND', imageIndex: 0, stock: 'In Stock' },
@@ -158,7 +158,7 @@ const productsData = [
     price: '399,000 VND',
     image: '../images/moona_BD2022_top_en_png_800x.webp',
     tags: ['Hololive', 'Indonesia', 'Memorials'],
-    desc: 'Birthday of Moona Hoshinova...',
+    desc: "Celebrate the birthday of Moona Hoshinova from hololive Indonesia 1st Generation!<br><br>◇Product Description:<br>Join the Moonafic community in celebrating Moona's special day with this exclusive birthday merchandise set. Each item features specially commissioned birthday artwork showcasing Moona in an adorable celebration theme.<br><br>◇Complete Set Includes:<br>・Voice Pack: Special birthday voice messages (Digital download code)<br>・Acrylic Stand: Premium display piece with exclusive birthday illustration<br>・Birthday Card Set: Collection of 5 unique greeting card designs<br>・Celebration Badge: Limited edition pin badge<br>・Commemorative Poster: B2 size (515mm x 728mm)<br>・Special Bonus: Random gift selected by Moona herself!<br><br>◇Individual Item Details:<br><br>【Voice Pack】<br>・Format: MP3/WAV (Digital Download)<br>・Content: 10+ exclusive voice lines<br>・Total Duration: Approx. 15 minutes<br>・Languages: English, Indonesian, Japanese<br><br>【Acrylic Stand】<br>・Size: Approx. 150mm x 180mm x 3mm<br>・Material: High-quality transparent acrylic<br>・Print: Full-color UV printing on both sides<br>・Base: Included (removable design)<br><br>【Birthday Cards】<br>・Set of 5 unique designs<br>・Size: Standard postcard (100mm x 148mm)<br>・Material: Premium cardstock (350gsm)<br>・Print: Full-color offset printing with matte finish<br><br>【Celebration Badge】<br>・Size: 57mm diameter<br>・Type: Pin button badge<br>・Design: Exclusive birthday 2022 artwork<br>・Material: Metal with epoxy coating<br><br>【Poster】<br>・Size: B2 (515mm x 728mm)<br>・Material: High-quality coated paper<br>・Print: Offset printing with vibrant colors<br>・Finish: Matte lamination<br><br>◇Packaging:<br>・All items come in special birthday-themed packaging<br>・Includes authentication card with hologram seal<br>・Gift-ready presentation box<br><br>◇Notes:<br>・Voice pack download code will be sent via email after shipment<br>・Digital content access requires internet connection<br>・Bonus item varies and cannot be selected<br>・This is a pre-order item with estimated 2-3 month shipping<br>・Limited quantity - first come, first served",
     images: ['./images/moona_BD2022_top_en_png_1000x.webp'],
     options: [
       {
@@ -175,7 +175,7 @@ const productsData = [
     price: '649,000 VND',
     image: '../images/SSStellar-Sales.jpg',
     tags: ['Holo', 'Live', 'CDs'],
-    desc: 'First full album...',
+    desc: 'Hoshimachi Suisei\'s milestone 1st full album "Still Still Stellar" - a stellar collection of her musical journey!<br><br>◇Product Description:<br>The moment all Hoshiyomi have been waiting for! Hololive\'s shining star Hoshimachi Suisei releases her first full album featuring hit singles, beloved covers, and brand new original songs. This premium release showcases Suisei\'s incredible vocal range and versatility across multiple music genres.<br><br>◇Track List:<br>1. Stellar Stellar (Lead Track - New Recording)<br>2. GHOST (Original)<br>3. Bluerose (Original)<br>4. Tenkyuu, Suisei wa Yoru wo Mataide (Original)<br>5. Now on Space (Original)<br>6. Template (Original)<br>7. Pieces (Ballad Version)<br>8. 3:12 (Cover - Remastered)<br>9. Andromeda (Original)<br>10. Jibunkatte Dazzling (Original)<br>11. NEXT COLOR PLANET (Original)<br>12. Still Still Stellar (Title Track - Original)<br>Plus bonus instrumental tracks<br><br>◇Product Specifications:<br>・Format: CD Album (Audio Disc)<br>・Total Tracks: 16 (12 vocal tracks + 4 bonus instrumentals)<br>・Total Running Time: Approx. 52 minutes<br>・Package Format: Premium digipak with slipcase<br>・Catalog Number: VIZL-2000<br>・Label: Victor Entertainment / hololive production<br>・Production: Innk Music<br><br>◇Limited First Press Edition Includes:<br>・Special deluxe outer box with holographic finish<br>・68-page premium photo book with behind-the-scenes content<br>・Complete lyrics booklet (Japanese, Romaji, English translations)<br>・Blu-ray disc with music videos and making-of documentary<br>・Exclusive illustration card by original character designer<br>・Serial code for bonus digital content and wallpapers<br>・Special message card with Suisei\'s handwritten signature (printed)<br><br>◇Blu-ray Contents (First Press Only):<br>・Stellar Stellar (Music Video)<br>・GHOST (Music Video)<br>・Bluerose (Music Video)<br>・Making of "Still Still Stellar" (30-minute documentary)<br>・Recording session footage<br>・Message from Suisei to fans<br><br>◇Package Features:<br>・Deluxe 4-panel digipak with matte lamination<br>・Full-color photo book (68 pages) with exclusive photoshoot<br>・Lyrics booklet with complete staff credits and liner notes<br>・Special slipcase with embossed logo and spot UV coating<br>・Premium quality printing throughout<br><br>◇Credits:<br>・Vocals & Lyrics: Hoshimachi Suisei<br>・Production: Innk Music / hololive production<br>・Label: Victor Entertainment<br>・Character Design: Original illustration by official artist<br><br>◇Technical Details:<br>・Audio CD: Standard audio CD format (playable worldwide)<br>・Blu-ray Region: Region A (playable in US, Japan, Korea, Southeast Asia)<br>・Video Format: 1080p Full HD<br>・Audio Format: Linear PCM Stereo<br><br>◇Notes:<br>・First Press Limited Edition available while stocks last<br>・After first press sells out, standard edition (CD only) will be available<br>・Blu-ray requires compatible Blu-ray player<br>・Digital bonus code is single-use per purchase<br>・All bonus items included only in First Press Limited Edition<br>・Product specifications and package design subject to change<br>・This is a pre-order item - estimated delivery 2-3 months after order period',
     images: ['./images/1220__1st_StillStillStellar_1.webp'],
     options: [
       {
