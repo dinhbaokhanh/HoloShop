@@ -1,119 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In</title>
-    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="../css/Style.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="home-menu">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../index.html">Home</a>
+        <a href="../goods/list.html">Products</a>
+        <a href="./Upcoming.html">Upcoming Goods</a>
+        <a href="./LogIn.html">Account</a>
+      </div>
 
-    <div class= "home-menu" >
+      <nav>
+        <div class="max-width">
+          <span
+            class="responsive-nav"
+            style="font-size: 30px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../index.html">Home</a>
-            <a href="../html/list.html">Products</a>
-            <a href="../html/Upcoming.html">Upcoming Goods</a>
-            <a href="../html/LogIn.html">Account</a>
-        </div>
-        
-        <nav>
-            <div class="max-width">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../images/hololiveshop_logo.png" alt=""
+            /></a>
+          </div>
 
-                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-              
-                <div class="logo">
-                    <a href="../index.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
-                </div>
-  
-                <ul class="menu">
+          <ul class="menu">
+            <a href="../goods/list.html">
+              <li>Products</li>
+            </a>
 
-                    <a href="../html/list.html">
-                        <li>Products</li>
-                    </a>
+            <a href="./Upcoming.html">
+              <li>Upcoming Goods</li>
+            </a>
 
-                    <a href="../html/Upcoming.html">
-                        <li>Upcoming Goods</li>
-                    </a>
-
-                    <!-- <a href="#">
+            <!-- <a href="#">
                         <li>Figures</li>
                     </a> -->
-                
-                </ul>
+          </ul>
 
-                <!-- <div class="input-bar">
+          <!-- <div class="input-bar">
                     <input id="search-input" type="text" placeholder="Search...">
                     <i class="fas fa-search search-icon"></i>
                 </div> -->
 
-                <div class="user">
-                    <a href="../html/LogIn.html">
-                        <i class="far fa-user fa-2x"></i>
-                    </a>
-                </div>
+          <div class="user">
+            <a href="./LogIn.html">
+              <i class="far fa-user fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
 
-            </div>
-        </nav>
-
-        <div id="blackline"></div>
-
+      <div id="blackline"></div>
     </div>
-        
+
     <div class="container">
+      <form id="sign-in">
+        <div class="row header">
+          <h2>Log In</h2>
+        </div>
 
-        <form id="sign-in">
-            <div class="row header">
-                <h2>Log In</h2>
-            </div>
+        <div>
+          <p>Please enter your e-mail and password:</p>
+        </div>
 
-            <div>
-                <p>Please enter your e-mail and password:</p>
-            </div>
+        <div class="row row_email">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            oninvalid="caution()"
+            required
+          />
+        </div>
 
-            <div class="row row_email">
-                <input type="email" id="email" placeholder="Email" oninvalid="caution();" required>
-            </div>
+        <div class="row row_password">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            oninvalid="caution()"
+            required
+          />
+        </div>
 
-            <div class="row row_password">
-                <input type="password" id="password" placeholder="Password" oninvalid="caution();" required>
-            </div>
+        <div class="row">
+          <button type="submit" id="submit">Log In</button>
+        </div>
 
-            <div class="row">
-                <button type="submit" id="submit">Log In</button>
-            </div>
-
-            <p class="AskingUser">Don't have an account? <a href="../html/SignUp.html">Sign Up</a> now</p>
-        </form>
-
+        <p class="AskingUser">
+          Don't have an account? <a href="../html/SignUp.html">Sign Up</a> now
+        </p>
+      </form>
     </div>
 
-    <br><br><br><br><br>
+    <br /><br /><br /><br /><br />
     <div class="footer">
-
-        <div class="footer-info">
-            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Infomation</div>
-            <!-- <div class="footer-des">Terms of Use</a></div>
+      <div class="footer-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Infomation
+        </div>
+        <!-- <div class="footer-des">Terms of Use</a></div>
             <div class="footer-des">Privacy Policy</a></div> -->
-            <div class="footer-des"><a href="../html/Q&A.html">Q&A</a></div>
-        </div>
+        <div class="footer-des"><a href="./Q&A.html">Q&A</a></div>
+      </div>
 
-        <div class="footet-info">
-            <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Related Sites</div>
-            <div class="footer-des"><a href=".../a.hololive/index.html"> Hololive Fanpage</a></div>
-            
+      <div class="footet-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Related Sites
         </div>
-
+        <div class="footer-des">Hololive Fanpage</div>
+      </div>
     </div>
 
-    <div class="footer-aside"><a href="../index.html"> hololive shop project by Dinh Bao Khanh from HDT-JSA16</a></div>
-
-    
+    <div class="footer-aside">
+      <a href="../index.html">
+        hololive shop project by Dinh Bao Khanh from HDT-JSA16</a
+      >
+    </div>
 
     <script src="../js/LogIn.js"></script>
-</body>
+  </body>
 </html>

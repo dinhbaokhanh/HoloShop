@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goods</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/list.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="home-menu">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../index.html">Home</a>
+        <a href="./list.html">Products</a>
+        <a href="../html/Upcoming.html">Upcoming Goods</a>
+        <a href="../html/LogIn.html">Account</a>
+      </div>
+      <nav>
+        <div class="max-width">
+          <span
+            class="responsive-nav"
+            style="font-size: 30px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../images/hololiveshop_logo.png" alt=""
+            /></a>
+          </div>
+          <ul class="menu">
+            <a href="./list.html"><li>Products</li></a>
+            <a href="../html/Upcoming.html"><li>Upcoming Goods</li></a>
+          </ul>
+          <div class="input-bar">
+            <input id="search-input" type="text" placeholder="Search..." />
+            <i
+              class="fas fa-search search-icon"
+              style="cursor: pointer"
+              onclick="SearchEngine()"
+            ></i>
+          </div>
+          <div class="user">
+            <a class="account" href="../html/LogIn.html"
+              ><i class="far fa-user fa-2x"></i
+            ></a>
+            <a style="cursor: pointer" id="cart"
+              ><i class="fas fa-shopping-basket fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div id="blackline"></div>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="wrapper">
+      <div class="filter">
+        <div class="filter_main"><p>Groups:</p></div>
+        <div class="groups">
+          <div class="checkbox">
+            <label
+              ><input type="checkbox" rel="Holo" onchange="change()" />
+              <span>Hololive</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label
+              ><input type="checkbox" rel="Indonesia" onchange="change()" />
+              <span>Hololive Indonesia</span>
+            </label>
+          </div>
+          <div class="checkbox final-box">
+            <label
+              ><input type="checkbox" rel="English" onchange="change()" />
+              <span>Hololive English</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="filter_main"><p>Categories:</p></div>
+        <div class="categories">
+          <div class="checkbox">
+            <label
+              ><input
+                type="checkbox"
+                rel="Memorials"
+                onchange="change()"
+                id="check-memorials"
+              />
+              <span>Memorials</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label
+              ><input
+                type="checkbox"
+                rel="CDs"
+                onchange="change()"
+                id="check-CDs"
+              />
+              <span>CDs</span>
+            </label>
+          </div>
+          <div class="checkbox final-box">
+            <label
+              ><input
+                type="checkbox"
+                rel="Figures"
+                onchange="change()"
+                id="check-figures"
+              />
+              <span>Figures</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="goods" id="goods-container"></div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="footer">
+      <div class="footer-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Infomation
+        </div>
+        <div class="footer-des"><a href="../html/Q&A.html">Q&A</a></div>
+      </div>
+      <div class="footet-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Related Sites
+        </div>
+        <div class="footer-des">
+          <a href="../a.hololive/index.html"> Hololive Fanpage</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="../index.html">
+        hololive shop project by Dinh Bao Khanh from HDT-JSA16</a
+      >
+    </div>
+
+    <script src="./product_data.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/list.js"></script>
+  </body>
+</html>

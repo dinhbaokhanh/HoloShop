@@ -12,9 +12,19 @@
 <body>
     
     <div class= "home-menu" >
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="../goods/list.html">Products</a>
+            <a href="./Upcoming.html">Upcoming Goods</a>
+            <a href="./LogIn.html">Account</a>
+        </div>
         
         <nav>
             <div class="max-width">
+
+                <span class="responsive-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
               
                 <div class="logo">
                     <a href="../index.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
@@ -22,11 +32,11 @@
   
                 <ul class="menu">
 
-                    <a href="../html/list.html">
+                    <a href="../goods/list.html">
                         <li>Products</li>
                     </a>
 
-                    <a href="../html/Upcoming.html">
+                    <a href="./Upcoming.html">
                         <li>Upcoming Goods</li>
                     </a>
 
@@ -42,7 +52,7 @@
                 </div> -->
 
                 <div class="user">
-                    <a href="../html/LogIn.html">
+                    <a href="./LogIn.html">
                         <i class="far fa-user fa-2x"></i>
                     </a>
                 </div>
@@ -91,12 +101,12 @@
             <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Infomation</div>
             <!-- <div class="footer-des">Terms of Use</a></div>
             <div class="footer-des">Privacy Policy</a></div> -->
-            <div class="footer-des"><a href="../html/Q&A.html">Q&A</a></div>
+            <div class="footer-des"><a href="./Q&A.html">Q&A</a></div>
         </div>
 
         <div class="footet-info">
             <div class="footer-title"><img src="../images/FooterIcon.webp" alt=""> Related Sites</div>
-            <div class="footer-des"><a href=".../a.hololive/index.html"> Hololive Fanpage</a></div>
+            <div class="footer-des"> Hololive Fanpage</div>
             
         </div>
 
@@ -104,6 +114,7 @@
     <div class="footer-aside"><a href="../index.html"> hololive shop project by Dinh Bao Khanh from HDT-JSA16</a></div>
 
 
+    <script src="../js/auth.js"></script>
     <script src="../js/contact.js"></script>
 
 </body>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hololive Shop Product View</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="home-menu">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="../index.html">Home</a>
+          <a href="./list.html">Products</a>
+          <a href="../html/Upcoming.html">Upcoming Goods</a>
+          <a href="../html/LogIn.html">Account</a>
+        </div>
+
+        <nav>
+          <div class="max-width">
+            <span
+              class="responsive-nav"
+              style="font-size: 30px; cursor: pointer"
+              onclick="openNav()"
+              >&#9776;</span
+            >
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../images/hololiveshop_logo.png" alt=""
+              /></a>
+            </div>
+            <ul class="menu">
+              <a href="./list.html"><li>Products</li></a>
+              <a href="../html/Upcoming.html"><li>Upcoming Goods</li></a>
+            </ul>
+            <div class="user">
+              <a class="account" href="../html/LogIn.html"
+                ><i class="far fa-user fa-2x"></i
+              ></a>
+              <a style="cursor: pointer" id="cart"
+                ><i class="fas fa-shopping-basket fa-2x"></i
+              ></a>
+            </div>
+            <div id="myModal" class="modal">
+              <div id="empty-cart">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cart</h5>
+                  <span class="close">&times;</span>
+                </div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <p style="text-align: center; font-size: 17px">
+                  Your cart is empty
+                </p>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              </div>
+              <div id="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cart</h5>
+                  <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <div class="cart-row">
+                    <span class="cart-item cart-header cart-column"></span>
+                    <span class="cart-price cart-header cart-column"></span>
+                    <span class="cart-quantity cart-header cart-column"></span>
+                  </div>
+                  <div class="cart-items"></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary order">
+                    CHECKOUT: &nbsp;<span class="cart-total-price"
+                      >0 &nbsp; VND</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="blackline"></div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="product">
+        <div class="product-images">
+          <div class="content" id="main-images-container"></div>
+
+          <div class="image-switch" id="thumbnails-container"></div>
+        </div>
+
+        <div class="product-info">
+          <div class="title" id="product-title">Loading...</div>
+          <div class="bar"></div>
+          <div style="height: 5px"></div>
+          <br /><br />
+
+          <p id="product-desc"></p>
+          <br /><br />
+
+          <div class="set">Set:</div>
+
+          <div id="container"></div>
+          <br />
+
+          <div class="set">Quantity:</div>
+          <div class="quantity">
+            <div class="quantity-button" onclick="decrease()">-</div>
+            <input
+              type="text"
+              onkeypress="return isNumberKey(event)"
+              id="quantity-input"
+              value="1"
+              min="1"
+            />
+            <div class="quantity-button" onclick="increase()">+</div>
+          </div>
+
+          <br /><br />
+
+          <div class="buy">
+            <button class="btn-cart">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="footer">
+      <div class="footer-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Information
+        </div>
+        <div class="footer-des"><a href="./Q&A.html">Q&A</a></div>
+      </div>
+      <div class="footet-info">
+        <div class="footer-title">
+          <img src="../images/FooterIcon.webp" alt="" /> Related Sites
+        </div>
+        <div class="footer-des">
+          <a href="../a.hololive/index.html"> Hololive Fanpage</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-aside">
+      <a href="../index.html">
+        hololive shop project by Dinh Bao Khanh from HDT-JSA16</a
+      >
+    </div>
+
+    <script src="product_data.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/goods.js"></script>
+
+    <script>
+      function showImage(index) {
+        const x = document.getElementsByClassName('mySlides')
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = 'none'
+        }
+        if (x[index]) x[index].style.display = 'block'
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search)
+        const productId = urlParams.get('id')
+
+        const product = productsData.find((p) => p.id === productId)
+
+        if (!product) {
+          document.getElementById('product-title').innerText =
+            'Product Not Found'
+          return
+        }
+
+        document.title = product.title
+        document.getElementById('product-title').innerText = product.title
+        document.getElementById('product-desc').innerHTML = product.desc
+
+        const mainImgContainer = document.getElementById(
+          'main-images-container'
+        )
+        const thumbContainer = document.getElementById('thumbnails-container')
+
+        product.images.forEach((imgSrc, index) => {
+          const img = document.createElement('img')
+          img.src = imgSrc
+          img.className = 'mySlides'
+          if (index === 0) img.style.display = 'block'
+          else img.style.display = 'none'
+          mainImgContainer.appendChild(img)
+
+          const thumb = document.createElement('img')
+          thumb.src = imgSrc
+          thumb.className = 'image-button'
+          thumb.onclick = () => showImage(index)
+          thumbContainer.appendChild(thumb)
+        })
+
+        const optionsContainer = document.getElementById('container')
+
+        product.options.forEach((opt, index) => {
+          const label = document.createElement('label')
+          label.className =
+            index === 0 ? 'selected-option demo' : 'options demo'
+
+          label.onclick = function () {
+            if (typeof sel === 'function') sel(this)
+            showImage(opt.imageIndex)
+          }
+
+          const hiddenImg = document.createElement('img')
+          hiddenImg.src = product.images[opt.imageIndex] || product.images[0]
+          hiddenImg.className = 'set-image'
+          hiddenImg.style.display = 'none'
+
+          const nameDiv = document.createElement('div')
+          nameDiv.className = 'set-name'
+          nameDiv.innerText = opt.name
+
+          const infoDiv = document.createElement('div')
+          infoDiv.className = 'set-info'
+
+          const priceDiv = document.createElement('div')
+          priceDiv.className = 'set-price'
+          priceDiv.innerText = opt.price
+
+          const stockDiv = document.createElement('div')
+          stockDiv.innerText = opt.stock
+          stockDiv.className =
+            opt.stock === 'In Stock' ? 'stock' : 'out-of-stock'
+
+          infoDiv.appendChild(priceDiv)
+          infoDiv.appendChild(stockDiv)
+
+          label.appendChild(hiddenImg)
+          label.appendChild(nameDiv)
+          label.appendChild(infoDiv)
+
+          optionsContainer.appendChild(label)
+        })
+      })
+    </script>
+  </body>
+</html>
